@@ -31,12 +31,12 @@ app.post("/pasname", (req, res) => {
 
 app.post("/sum", (req, res) => {
   const { x, y } = req.body
-  if(!x && !y) {
+  if (!x && !y) {
     res.status(200).json({
-    message:"please enter x and y"
-  })
-  return;
-}
+      message: "please enter x and y"
+    })
+    return;
+  }
   res.status(200).json({ total: x + y })
 
 })
@@ -54,6 +54,10 @@ app.post("/getAvg", (req, res) => {
   console.log(sum);
 })
 
-app.use("/" , Routes);
+app.get('live', (req, res) => {
+  res.status(200).json({live: true})
+})
+
+app.use("/", Routes);
 
 module.exports = app 
