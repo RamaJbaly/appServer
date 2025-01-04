@@ -1,9 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const Routes = require("./API/routes/routes");
 const app = express();
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 // app.use('/' , Routes)
 
 app.use((req, res, next) => {
