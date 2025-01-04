@@ -54,7 +54,7 @@ app.post("/getAvg", (req, res) => {
   console.log(sum);
 })
 
-app.get('live', (req, res) => {
+app.get('/live', (req, res) => {
   res.status(200).json({live: true})
 })
 
