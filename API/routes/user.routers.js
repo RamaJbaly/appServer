@@ -6,8 +6,8 @@ userRouter.post("/createUser", createUser);
 
 userRouter.post("/FindUser", FindUser)
 userRouter.delete("/DeletUser", DeletUser)
-userRouter.patch("/ updateuser",  updateuser)
-userRouter.patch("/login",  Login)
+userRouter.patch("/ updateuser", updateuser)
+userRouter.post("/login", Login)
 
 
 module.exports = userRouter;
