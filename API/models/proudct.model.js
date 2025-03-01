@@ -6,8 +6,8 @@ const prouductSchema = new Schema({
     type: String,
     required: true,
     unique: true,
-    maxLength: 14,
-    minLength: 4,
+    maxLength: 50,
+    minLength: 1,
     spilt: " ",
   },
   price: {
